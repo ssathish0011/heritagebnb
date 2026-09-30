@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet');
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Updock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Niconne", cursive;
+  /* font-family: "Playfair Display", serif; */
+}
+
+:root {
+  --primary-color: #033631;
+  --color-two: rgb(21, 44, 41);
+  --secondary-color: #daa520;
+  --extra-color: #e7eeee;
+  --extra-color-one: #07554D;
+  --background-one: var(--primary-color);
+  --white-color: #FFFFFF;
+}
+
+p {
+  font-family: "Niconne", cursive;
+  /* font-family: "Quintessential", serif; */
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+figure {
+  margin: 0 !important;
+}
+
+a {
+  text-decoration: none;
+  color: #000 !;
+  font-family: "Niconne", cursive;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+html,
+body {
+  overflow-x: hidden !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.bnb-p-tag {
+  font-size: 18px;
+}
+
+.bng-heading {
+  font-size: 35px;
+}
+
+.bnb-Founder {
+  font-size: 20px;
+}
+
+.bnb-marque {
+  font-size: 80px;
+}
+
+.footer-bnb {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .bnb-p-tag {
+    font-size: 16px;
+  }
+
+  .bng-heading {
+    font-size: 25px;
+  }
+
+  .bnb-Founder {
+    font-size: 18px;
+  }
+
+  .bnb-marque {
+    font-size: 40px;
+  }
+
+  .footer-bnb {
+    font-size: 16px;
+  }
+}
+
+.pages {
+  padding: 60px 0;
+}
+
+.heritage-ab-section .service-title {
+  margin-bottom: 25px;
+}
+
+
+/* Default - Desktop */
+.mobile-shape-my {
+  display: none;
+}
+
+.desktop-shape-my {
+  display: block;
+}
+.project-special-mobile{
+  display: none;
+}
+/* Mobile - 767px and below */
+@media (max-width: 996px) {
+  .mobile-shape-my {
+    display: block;
+    height: 50px !important;
+  }
+  .project-special-shape{
+    display: none;
+  }
+
+  .project-special-mobile{
+    height: 150px !important;
+    display: block;
+  }
+
+  .desktop-shape-my {
+    display: none;
+  }
+
+  .heritage-ab-hero-content {
+    padding: 15px 20px 30px !important;
+  }
+
+}

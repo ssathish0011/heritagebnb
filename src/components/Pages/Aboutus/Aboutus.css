@@ -1,0 +1,626 @@
+/* ---------- ppage banner ---------- */
+
+.heritage-ab-hero {
+    position: relative;
+    /* min-height: 320px; */
+    width: 100%;
+    background-image: url(/src/assets/main/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--ab-cream-text);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* .heritage-ab-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+        repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.02) 0 2px, transparent 2px 140px);
+    pointer-events: none;
+} */
+
+/* .heritage-ab-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.55));
+    pointer-events: none;
+} */
+
+.heritage-ab-hero-content {
+    position: relative;
+    z-index: 2;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15px 20px 13px;
+}
+
+.heritage-ab-hero-title {
+    font-weight: 700;
+    font-size: clamp(2.4rem, 5vw, 4.6rem);
+    letter-spacing: 0.05em;
+    margin: 0;
+    color: #edcb96;
+}
+
+.heritage-ab-hero-line {
+    display: block;
+    width: 92px;
+    height: 1px;
+    margin-top: 18px;
+    transform-origin: left center;
+    background: linear-gradient(to right, #edcb96, rgba(237, 203, 150, 0.15));
+}
+
+.heritage-ab-page--animate .heritage-ab-hero-title {
+    opacity: 0;
+}
+
+.heritage-ab-page--animate .heritage-ab-hero-line {
+    transform: scaleX(0);
+}
+
+.heritage-ab-page--animate .heritage-ab-sec-legacy .section-title,
+.heritage-ab-page--animate .heritage-ab-sec-legacy .vs-about__right p,
+.heritage-ab-page--animate .heritage-ab-sec-legacy .ab-experience,
+.heritage-ab-page--animate .heritage-ab-sec-philosophy .about-dark,
+.heritage-ab-page--animate .heritage-ab-sec-leadership .heritage-ab-copy .section-title,
+.heritage-ab-page--animate .heritage-ab-sec-leadership .heritage-ab-copy p {
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.heritage-ab-section {
+    padding: 60px 0;
+}
+
+
+/* ====================== Section 1 ====================== */
+
+.heritage-ab-pullquote {
+    font-weight: 500;
+    font-size: 28px !important;
+    line-height: 1.6;
+    color: var(--ab-gold-deep) !important;
+    /* margin-top: 24px !important; */
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.vs-about .vs-title__main {
+    max-width: 630px;
+}
+
+@media (max-width: 1300px) {
+    .vs-about .vs-title__main {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .vs-about .vs-title__main {
+        font-size: 40px;
+    }
+}
+
+.vs-about__wrap {
+    position: relative;
+    z-index: 30;
+}
+
+.vs-about__wrap .ab-experience {
+    /* width: 195px;
+    height: 202px; */
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 33px;
+}
+
+.vs-about__wrap .ab-experience h2 {
+    font-size: 90px;
+    transition: all .4s ease-in-out;
+    color: #ebc485;
+    line-height: 1;
+}
+
+
+.vs-about .abImg img {
+    border-radius: 20px;
+}
+
+@media (max-width: 1300px) {
+    .vs-about .abImg img {
+        height: 400px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 1199px) {
+    .vs-about .abImg img {
+        height: 373px;
+    }
+}
+
+.vs-about .abImg p {
+    margin: 30px 0 0;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+@media (max-width: 991px) {
+    .vs-about .vs-title__main {
+        font-size: 44px;
+    }
+
+    /* .vs-about .abImg {
+        margin-top: 30px;
+    } */
+
+    .vs-about .abImg img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .vs-about .vs-title__main {
+        font-size: 38px;
+    }
+
+    .vs-about .abImg img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-section-3 .heritage-ab-copy {
+        padding-top: 25px;
+    }
+}
+
+.vs-about.style2 .abImg {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    overflow: visible;
+}
+
+.vs-about.style2 .abImg .para-img {
+    /* width: 420px;
+    height: 540px; */
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.vs-about.style2 .abImg .para-img img {
+    transition: none !important;
+    will-change: transform;
+}
+
+.vs-about.style2 .abImg img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.vs-about.style2 .vs-about__wrap .ab-experience {
+    position: relative;
+    z-index: 40;
+    margin: 10px 0 27px;
+    animation: heritage-ab-badge-float 3.2s ease-in-out infinite alternate;
+    will-change: transform;
+}
+
+@keyframes heritage-ab-badge-float {
+    0% {
+        transform: translateY(-28px);
+    }
+
+    100% {
+        transform: translateY(18px);
+    }
+}
+
+.vs-about.style2 .vs-about__wrap .ab-experience p {
+    font-size: 25px;
+    color: #ebc485;
+    font-weight: 500;
+    margin: 0;
+}
+
+.vs-about.style2 .vs-about__right p {
+    font-size: 25px;
+}
+
+
+.vs-about__right .highlight {
+    font-weight: 400;
+    color: #a67c3d;
+}
+
+
+@media (max-width: 1400px) {
+    .vs-about.style2 .vs-title__main {
+        max-width: 570px;
+        font-size: 45px;
+    }
+
+    .vs-about.style2 .abImg .para-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+}
+
+
+
+@media (max-width: 1300px) {
+    .vs-about.style2 .vs-title__main {
+        max-width: 510px;
+        font-size: 40px;
+    }
+
+    .vs-about.style2 .abImg .para-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .vs-about.style2 .vs-about__right .ab-Box .question p {
+        font-size: 13px;
+    }
+
+    .vs-about.style2 .vs-about__right .ab-Box .call-icon {
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+
+    .vs-about.style2 .vs-about__right .ab-Box .call-icon svg {
+        width: 50px;
+    }
+
+    .vs-about.style2 .vs-about__right .ab-Box .call-icon i {
+        font-size: 20px;
+    }
+
+    .vs-about.style2 .vs-about__right .ab-Box p.e-call {
+        font-size: 16px !important;
+    }
+
+    .vs-about.style2 .vs-about__right .ab-Box ul li {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .vs-about.style2 .vs-about__right .ab-Box ul li i {
+        margin-right: 3px;
+    }
+}
+
+
+@media (max-width: 1199px) {
+    .vs-about.style2 .abImg {
+        margin-bottom: 30px;
+    }
+
+    .vs-about.style2 .abImg .para-img {
+        width: 100%;
+    }
+
+    .vs-about.style2 .abImg .para-img img {
+        transform: none !important;
+    }
+
+    .vs-about.style2 .vs-about__right .ab-Box {
+        gap: 20px;
+    }
+
+    .vs-about.style2 .vs-about__right .ab-Box .question {
+        padding: 30px;
+    }
+
+    .vs-about.style2 .vs-about__right .ab-Box .question h3 {
+        font-size: 24px;
+    }
+
+    .vs-about.style2 .vs-about__right .ab-Box .question p {
+        font-size: 15px;
+    }
+
+    .vs-about.style2 .vs-about__right .ab-Box .call-icon {
+        margin-right: 15px;
+        margin-top: 15px;
+    }
+
+    .vs-about.style2 .vs-about__right .ab-Box .call-icon svg {
+        width: auto;
+    }
+
+    .vs-about.style2 .vs-about__right .ab-Box .call-icon i {
+        font-size: 22px;
+    }
+
+    .vs-about.style2 .vs-about__right .ab-Box p.e-call {
+        font-size: 20px !important;
+    }
+
+    .vs-about.style2 .vs-about__right .ab-Box ul li {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .vs-about.style2 .vs-about__right .ab-Box ul li i {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .vs-about.style2 .vs-about__right .ab-Box {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 575px) {
+    .vs-about.style2 .abImg {
+        display: block;
+    }
+
+    .vs-about.style2 .vs-about__wrap .ab-experience {
+        /* margin: -36px 0 20px; */
+        width: 100%;
+    }
+
+    .vs-about.style2 .vs-about__wrap img {
+        display: none;
+    }
+}
+
+
+
+
+/* ====================== Section 2 ====================== */
+
+.about-dark p {
+    font-size: 25px;
+    color: #fff;
+    margin: 0 0 16px;
+}
+
+.about-dark span {
+    color: #edcb96;
+}
+
+.heritage-ab-gallery-main {
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.heritage-ab-gallery-main img {
+    border-radius: 15px;
+    width: 100%;
+    display: block;
+    transition: transform 1.15s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.heritage-ab-gallery-main:hover img,
+.heritage-ab-gallery-thumb:hover img {
+    transform: scale(1.05);
+}
+
+.heritage-ab-gallery-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 1.15s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+.about-dark .heritage-ab-pullquote {
+    color: #edcb96 !important;
+}
+
+
+
+
+/* ====================== Section 3 ====================== */
+
+.about-section-3 p {
+    font-size: 25px;
+}
+
+.about-section-3 .highlight {
+    font-weight: 400;
+    color: #a67c3d;
+}
+
+.about-section-3 img {
+    border-radius: 10px;
+}
+
+.heritage-ab-vision-label {
+    font-weight: 600;
+    color: var(--ab-ink) !important;
+    margin-bottom: 6px !important;
+}
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Heritage B&B — About Us
+   All classes prefixed with heritage-ab- to keep this scoped and drop-in.
+   ========================================================================== */
+
+.heritage-ab-page {
+    --ab-ink: #241a12;
+    --ab-ink-soft: #4a3c2c;
+    --ab-parchment: #FEF0D5;
+    --ab-parchment-deep: #e7dac0;
+    --ab-tan: #e3d3b4;
+    --ab-gold: #a9793f;
+    --ab-gold-deep: #8a6127;
+    --ab-cream-text: #f7f1e3;
+    --ab-hero-brown: #1c130c;
+
+    background: var(--ab-parchment);
+    color: var(--ab-ink);
+    -webkit-font-smoothing: antialiased;
+    overflow: visible;
+}
+
+.heritage-ab-sec-legacy {
+    overflow: visible !important;
+    position: relative;
+    z-index: 5;
+}
+
+.heritage-ab-page * {
+    box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .heritage-ab-page * {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+
+.heritage-ab-gallery-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 12px;
+}
+
+.heritage-ab-gallery-thumb {
+    /* height: 200px; */
+    background: linear-gradient(160deg, #6d5638 0%, #3a2a1a 100%);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.heritage-ab-gallery-thumb--large {
+    grid-column: span 1;
+}
+
+.heritage-ab-gallery-thumb--large img {
+    border-radius: 15px;
+}
+
+.heritage-ab-gallery-thumb--small {
+    grid-column: span 1;
+}
+
+/* ---------- leadership photos ---------- */
+
+.heritage-ab-leaders {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.heritage-ab-leader-photo {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.heritage-ab-leader-photo img,
+.heritage-ab-leader-wide {
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    transition: transform 1.15s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.heritage-ab-leader-photo:hover img,
+.heritage-ab-leader-wide:hover {
+    transform: scale(1.04);
+}
+
+
+.heritage-ab-leader-photo figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+    .heritage-ab-nav-links {
+        display: none;
+    }
+
+    .heritage-ab-nav-burger {
+        display: flex;
+    }
+
+    .heritage-ab-grid,
+    .heritage-ab-grid--imgRight {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .heritage-ab-grid--imgRight .heritage-ab-copy {
+        order: 2;
+    }
+
+    .heritage-ab-grid--imgRight .heritage-ab-gallery {
+        order: 1;
+    }
+}
+
+@media (max-width: 640px) {
+    /* .heritage-ab-section {
+        padding: 64px 0;
+    } */
+
+    .heritage-ab-navbar {
+        padding: 20px 22px;
+    }
+
+    /* .heritage-ab-hero {
+        min-height: 200px;
+    } */
+
+    .heritage-ab-leaders {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+}

@@ -1,0 +1,413 @@
+.heritage-ct-page {
+    --ct-ink: #241a12;
+    --ct-muted: #241a12;
+    --ct-gold: #a67c3d;
+    --ct-gold-soft: #edcb96;
+    --ct-parchment: #FEF0D5;
+    --ct-panel: #fbf6ec;
+    --ct-line: #ddd0b4;
+    --ct-green: #07554d;
+    overflow-x: hidden;
+    background: var(--ct-parchment);
+    color: var(--ct-ink);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #241a12;
+    opacity: 1;
+}
+
+.heritage-ct-page .heritage-ab-hero {
+    position: relative;
+    width: 100%;
+    background-image: url(/src/assets/main/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+.heritage-ct-page .heritage-ab-hero-content {
+    position: relative;
+    z-index: 2;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15px 20px 13px;
+}
+
+.heritage-ct-page .heritage-ab-hero-title {
+    font-weight: 700;
+    font-size: clamp(2.4rem, 5vw, 4.6rem);
+    letter-spacing: 0.05em;
+    margin: 0;
+    color: #edcb96;
+}
+
+.heritage-ct-page .heritage-ab-hero-line {
+    display: block;
+    width: 92px;
+    height: 1px;
+    margin-top: 18px;
+    transform-origin: left center;
+    background: linear-gradient(to right, #edcb96, rgba(237, 203, 150, 0.15));
+}
+
+.heritage-ct-page--animate .heritage-ab-hero-title {
+    opacity: 0;
+}
+
+.heritage-ct-page--animate .heritage-ab-hero-line {
+    transform: scaleX(0);
+}
+
+.heritage-ct-page--animate .heritage-ct-reveal {
+    opacity: 0;
+}
+
+.heritage-ct-wrap {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 64px 24px 40px;
+    box-sizing: border-box;
+}
+
+.heritage-ct-intro {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 56px;
+}
+
+.heritage-ct-eyebrow {
+    font-size: 15px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ct-gold);
+    margin: 0 0 12px;
+}
+
+.heritage-ct-heading {
+    font-size: clamp(32px, 4vw, 46px);
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    margin: 0;
+    color: var(--ct-ink);
+}
+
+.heritage-ct-lead {
+    font-size: 25px;
+    color: var(--ct-muted);
+    margin: 0;
+}
+
+.heritage-ct-divider {
+    width: 100%;
+    max-width: 280px;
+    margin: 22px auto 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+.heritage-ct-divider-line {
+    height: 1px;
+    flex: 1;
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(171, 126, 52, 0.65),
+        rgba(171, 126, 52, 0.25)
+    );
+}
+
+.heritage-ct-divider-line-right {
+    background: linear-gradient(
+        to left,
+        transparent,
+        rgba(171, 126, 52, 0.65),
+        rgba(171, 126, 52, 0.25)
+    );
+}
+
+.heritage-ct-divider-ornament {
+    width: 34px;
+    height: 34px;
+    color: #b18442;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heritage-ct-divider-ornament svg {
+    width: 20px;
+    height: 20px;
+}
+
+.heritage-ct-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 28px;
+    align-items: start;
+}
+
+.heritage-ct-form-panel {
+    background: var(--ct-panel);
+    border: 1px solid var(--ct-line);
+    border-radius: 22px;
+    padding: 40px 36px;
+    box-shadow: 0 18px 50px rgba(44, 33, 23, 0.06);
+}
+
+.heritage-ct-form-title {
+    border-bottom: 1px solid var(--ct-line);
+    padding-bottom: 18px;
+    margin-bottom: 28px;
+}
+
+.heritage-ct-form-title h3 {
+    font-size: 14px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ct-gold);
+    margin: 0 0 8px;
+}
+
+.heritage-ct-form-title h2 {
+    font-size: 42px;
+    font-weight: 500;
+    color: var(--ct-ink);
+    margin: 0;
+}
+
+.heritage-ct-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.heritage-ct-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.heritage-ct-field span {
+    font-size: 18px;
+    letter-spacing: 0.04em;
+    color: var(--ct-muted);
+}
+
+.heritage-ct-field input,
+.heritage-ct-field select,
+.heritage-ct-field textarea {
+    width: 100%;
+    font-size: 18px;
+    font-family: inherit;
+    color: var(--ct-ink);
+    background: #fcf1dd;
+    border: 1px solid rgba(102, 102, 102, 0.12);
+    border-radius: 12px;
+    padding: 16px 18px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.heritage-ct-field textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+.heritage-ct-field input:focus,
+.heritage-ct-field select:focus,
+.heritage-ct-field textarea:focus {
+    border-color: var(--ct-gold);
+    box-shadow: 0 0 0 3px rgba(179, 137, 74, 0.16);
+}
+
+.heritage-ct-submit {
+    position: relative;
+    display: inline-block;
+    margin-top: 6px;
+    background: rgb(230, 177, 95);
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: inherit;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    padding: 16px 36px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 0;
+    transition: color 0.35s ease;
+}
+
+.heritage-ct-submit::after {
+    content: "";
+    position: absolute;
+    inset: 0 0 0 auto;
+    width: 0;
+    background: var(--ct-green);
+    transition: width 0.4s ease;
+    z-index: -1;
+}
+
+.heritage-ct-submit:hover {
+    color: #fff;
+}
+
+.heritage-ct-submit:hover::after {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+.heritage-ct-submit:disabled {
+    opacity: 0.7;
+    cursor: wait;
+}
+
+.heritage-ct-status {
+    margin: 16px 0 0;
+    font-size: 18px;
+    color: var(--ct-green);
+}
+
+.heritage-ct-aside {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.heritage-ct-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.heritage-ct-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    background: #f8eed3;
+    border: 1px solid rgba(102, 102, 102, 0.1);
+    border-radius: 18px;
+    padding: 20px;
+}
+
+.heritage-ct-card--wide {
+    grid-column: 1 / -1;
+}
+
+.heritage-ct-card-icon {
+    position: relative;
+    flex: 0 0 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--ct-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.heritage-ct-card-icon::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #daa520;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.4s ease;
+}
+
+.heritage-ct-card:hover .heritage-ct-card-icon::before {
+    transform: scale(1);
+}
+
+.heritage-ct-card-icon img {
+    position: relative;
+    z-index: 1;
+    width: 22px;
+    filter: brightness(0) invert(1);
+}
+
+.heritage-ct-card h3 {
+    font-size: 22px;
+    margin: 0 0 4px;
+    text-transform: capitalize;
+}
+
+.heritage-ct-card p,
+.heritage-ct-card a {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.45;
+    color: var(--ct-ink);
+}
+
+.heritage-ct-card a:hover {
+    color: var(--ct-gold);
+}
+
+.heritage-ct-map {
+    overflow: hidden;
+    border-radius: 20px;
+    min-height: 280px;
+    border: 1px solid var(--ct-line);
+}
+
+.heritage-ct-map iframe {
+    display: block;
+    width: 100%;
+    height: 520px;
+    border: 0;
+}
+
+
+@media (max-width: 991px) {
+    .heritage-ct-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .heritage-ct-form-panel {
+        padding: 32px 24px;
+    }
+}
+
+@media (max-width: 640px) {
+    .heritage-ct-wrap {
+        padding: 48px 16px 70px;
+    }
+
+    .heritage-ct-row,
+    .heritage-ct-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .heritage-ct-form-title h2 {
+        font-size: 34px;
+    }
+
+    .heritage-ct-lead {
+        font-size: 19px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .heritage-ct-submit::after,
+    .heritage-ct-card-icon::before {
+        transition: none;
+    }
+}
